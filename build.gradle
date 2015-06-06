@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+ext {
+    junitVersion = '4.12'
+    mockitoVersion = '2.0.2-beta'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.mockito:mockito-all:$mockitoVersion"
+}
