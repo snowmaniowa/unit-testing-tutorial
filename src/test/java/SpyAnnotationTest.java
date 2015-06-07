@@ -11,7 +11,6 @@ import static junit.framework.TestCase.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class SpyAnnotationTest {
-
     @Spy
     private List<String> spiedList = new ArrayList<>();
 
