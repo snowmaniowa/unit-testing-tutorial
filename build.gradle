@@ -3,6 +3,7 @@ apply plugin: 'java'
 ext {
     junitVersion = '4.12'
     mockitoVersion = '2.0.2-beta'
+    powerMockitoVersion = '1.6.2'
 }
 
 repositories {
@@ -10,6 +11,6 @@ repositories {
 }
 
 dependencies {
-    testCompile "junit:junit:$junitVersion"
-    testCompile "org.mockito:mockito-all:$mockitoVersion"
+    testCompile "org.powermock:powermock-module-junit4:$powerMockitoVersion"
+    testCompile "org.powermock:powermock-api-mockito:$powerMockitoVersion"
 }
